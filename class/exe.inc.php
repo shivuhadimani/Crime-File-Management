@@ -9,7 +9,7 @@ class queryexc
     $this->data=array("");
     $this->num=0;
   }
-  public function exc($query,$connection)
+  public function exc($connection,$query)
   {
     $this->query_exc($query,$connection);
     return $this->get_data();
