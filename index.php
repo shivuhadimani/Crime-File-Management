@@ -15,7 +15,7 @@ $db->connect();
   <script src="js/main.js" charset="utf-8"></script>
   <body class="indexclass">
     <div style="height:80px">
-      <h1 class="striped">Crime Database <button type="button" style="float:right;height:50px;width:150px;background-color:white;text-decoration:none; margin-top:0px;color=black;border-radius:15px;border:none" align="right">LOGIN<i class="fa fa-user-circle-o" style="font-size:48px;color:red"></i></button></h1>
+      <h1 class="striped">Crime Database <button type="button" style="float:right;height:50px;width:150px;background-color:white;text-decoration:none; margin-top:0px;color=black;border-radius:15px;border:none" align="right"><a href="login.php" style="">LOGIN<i class="fa fa-user-circle-o" style="font-size:48px;color:red"></i></a></button></h1>
     </div>
     <center style="margin-top:0px;"><font color="black" style="font-size:40px;">Most wanted</font></center>
     <hr>

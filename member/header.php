@@ -14,9 +14,9 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">STAFF<span class="caret"></span></a>
           <ul class="dropdown-menu">
              <li><a href="addstaff.php">Add staff</a></li>
-             <li><a href="#">Upadte staff</a></li>
-             <li><a href="#">Transfer staff</a></li>
-             <li><a href="#">View staff</a></li>
+             <li><a href="updatestaff.php">Upadte staff</a></li>
+             <li><a href="transfer.php">Transfer staff</a></li>
+             <li><a href="viewstaff.php">View staff</a></li>
            </ul>
         </li>
         <li class="dropdown">
