@@ -65,9 +65,9 @@ if($obj->CheckForLogin()===0)
   <body>
     <?php include 'header.php'; ?>
     <?php if(!isset($_GET['username'])): ?>
-      <h2><font color="white">Please enter Crminal ID to view</font></h2>
-      <form class="" action="viewcriminal.php" method="GET">
-        <input type="text" name="username" value="" placeholder="Criminal ID" required="required" id="inp" style="margin-left:80px;">
+      <h2><font color="white">Please enter Witness ID to view</font></h2>
+      <form class="" action="viewwitness.php" method="GET">
+        <input type="text" name="username" value="" placeholder="Witness ID" required="required" id="inp" style="margin-left:80px;">
         <input type="submit" name="" value="Check" style="width:80px;">
       </form>
     <?php endif; ?>
@@ -75,7 +75,7 @@ if($obj->CheckForLogin()===0)
         <?php
           if (!empty($_GET['username']))
           {
-            $query="SELECT * FROM `criminal` WHERE `id`=".$_GET['username'];
+            $query="SELECT * FROM `witness` WHERE `id`=".$_GET['username'];
             $db=new database;
             $db->connect();
             $qobj=new queryexc;
@@ -89,7 +89,7 @@ if($obj->CheckForLogin()===0)
             <th>
             <table border="0px">
               <tr>
-                <th>Criminal ID</th><th><?php echo $data[1]['id']; ?></th>
+                <th>Witness ID</th><th><?php echo $data[1]['id']; ?></th>
               </tr>
               <tr>
                 <th>Occupication</th><th><?php echo $data[1]['ocp']; ?></th>
@@ -112,16 +112,12 @@ if($obj->CheckForLogin()===0)
               <tr>
                 <th>Identy Card Number</th><th><?php echo $data[1]['id_no']; ?></th>
               </tr>
-              <tr>
-                <th>Most Wnated status</th><th><?php echo $data[1]['most_wanted']; ?></th>
-              </tr>
-
             </table>
           </th>
           <th>
             <table>
               <tr>
-                <img src="../criminals/<?php echo $data[1]['id'] ?>.jpg" alt="" height="300px" width="260px">
+                <img src="../witness/<?php echo $data[1]['id'] ?>.jpg" alt="" height="300px" width="260px">
               </tr>
             </table>
           </th></tr>

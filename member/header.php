@@ -30,9 +30,9 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">WITNESS<span class="caret"></span></a>
           <ul class="dropdown-menu">
-             <li><a href="#">Add witness</a></li>
-             <li><a href="#">Remove witness</a></li>
-             <li><a href="#">View witness</a></li>
+             <li><a href="addwitness.php">Add witness</a></li>
+             <li><a href="removewitness.php">Remove witness</a></li>
+             <li><a href="viewwitness.php">View witness</a></li>
            </ul>
         </li>
         <li class="dropdown">

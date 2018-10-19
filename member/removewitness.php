@@ -15,16 +15,12 @@ if($obj->CheckForLogin()===0)
         $db=new database;
         $db->connect();
         $qexc=new queryexc;
-        $query="DELETE FROM `criminal_causes` WHERE `criminal_id`=$id";
-        if($qexc->qexc($db->con,$query))
-        {
-          $query="DELETE FROM `criminal` WHERE `id`=$id";
+          $query="DELETE FROM `witness` WHERE `id`=$id";
+          unlink("../witness/".$id.".jpg");
           if(!($qexc->qexc($db->con,$query)))
+          {
             echo "<script>alert('Please try again')</script>";
-        }else
-        {
-          echo "<script>alert('Please try again')</script>";
-        }
+          }
       }
     }else
     {
@@ -65,9 +61,9 @@ if($obj->CheckForLogin()===0)
   <body>
     <?php include 'header.php'; ?>
     <?php if(!isset($_GET['username'])): ?>
-      <h2><font color="white">Please enter Crminal ID to view</font></h2>
-      <form class="" action="viewcriminal.php" method="GET">
-        <input type="text" name="username" value="" placeholder="Criminal ID" required="required" id="inp" style="margin-left:80px;">
+      <h2><font color="white">Please enter Witness ID to Remove</font></h2>
+      <form class="" action="removewitness.php" method="GET">
+        <input type="text" name="username" value="" placeholder="WItnessss ID" required="required" id="inp" style="margin-left:80px;">
         <input type="submit" name="" value="Check" style="width:80px;">
       </form>
     <?php endif; ?>
@@ -75,7 +71,7 @@ if($obj->CheckForLogin()===0)
         <?php
           if (!empty($_GET['username']))
           {
-            $query="SELECT * FROM `criminal` WHERE `id`=".$_GET['username'];
+            $query="SELECT * FROM `witness` WHERE `id`=".$_GET['username'];
             $db=new database;
             $db->connect();
             $qobj=new queryexc;
@@ -84,16 +80,15 @@ if($obj->CheckForLogin()===0)
             {
             ?>
           <font color="white">
-          <table width="100%" style="margin-left:20px;ss">
+          <form class="" action="removewitness.php" method="POST">
+          <table width="100%">
             <tr>
             <th>
             <table border="0px">
               <tr>
-                <th>Criminal ID</th><th><?php echo $data[1]['id']; ?></th>
+                <th>Wittness ID</th><th><?php echo $data[1]['id']; ?></th>
               </tr>
-              <tr>
-                <th>Occupication</th><th><?php echo $data[1]['ocp']; ?></th>
-              </tr>
+              <input type="hidden" name="id" value="<?php echo $data[1]['id']; ?>">
               <tr>
                 <th>Name</th><th><?php echo $data[1]['name']; ?></th>
               </tr>
@@ -113,19 +108,22 @@ if($obj->CheckForLogin()===0)
                 <th>Identy Card Number</th><th><?php echo $data[1]['id_no']; ?></th>
               </tr>
               <tr>
-                <th>Most Wnated status</th><th><?php echo $data[1]['most_wanted']; ?></th>
+                <th>Please confirm by your password</th><th><input type="password" name="passw" value="" placeholder="Password" required id="inp"> </th>
               </tr>
-
+              <tr>
+                <th></th><th><input type="Submit" name="" value="remove" required="required" style="background-color: silvers;width:80px;"></th>
+              </tr>
             </table>
           </th>
           <th>
             <table>
               <tr>
-                <img src="../criminals/<?php echo $data[1]['id'] ?>.jpg" alt="" height="300px" width="260px">
+                <img src="../witnness/<?php echo $data[1]['id'] ?>.jpg" alt="" height="300px" width="260px">
               </tr>
             </table>
           </th></tr>
           </table>
+        </form>
       </font>
         <?php }else
               {
