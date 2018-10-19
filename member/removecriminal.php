@@ -19,6 +19,7 @@ if($obj->CheckForLogin()===0)
         if($qexc->qexc($db->con,$query))
         {
           $query="DELETE FROM `criminal` WHERE `id`=$id";
+          unlink("../criminals/".$id.".jpg");
           if(!($qexc->qexc($db->con,$query)))
             echo "<script>alert('Please try again')</script>";
         }else
