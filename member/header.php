@@ -22,18 +22,17 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">CRIMINAL<span class="caret"></span></a>
           <ul class="dropdown-menu">
-             <li><a href="#">Add criminal</a></li>
-             <li><a href="#">Update criminal</a></li>
-             <li><a href="#">Remove criminal</a></li>
-             <li><a href="#">View criminal</a></li>
+             <li><a href="addcriminal.php">Add criminal</a></li>
+             <li><a href="removecriminal.php">Remove criminal</a></li>
+             <li><a href="viewcriminal.php">View criminal</a></li>
            </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">WITNESS<span class="caret"></span></a>
           <ul class="dropdown-menu">
              <li><a href="#">Add witness</a></li>
-             <li><a href="#">Update witness</a></li>
              <li><a href="#">Remove witness</a></li>
+             <li><a href="#">View witness</a></li>
            </ul>
         </li>
         <li class="dropdown">
