@@ -5,6 +5,7 @@ body
   background-size: cover;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
+  max-width: 100%;
 }
 input
 {
@@ -37,4 +38,9 @@ input
 #output_image
 {
  max-width:300px;
+}
+#cid
+{
+  max-width: 400px;
+  text-decoration-color: white;
 }

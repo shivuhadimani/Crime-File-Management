@@ -36,19 +36,19 @@
            </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPLIANT<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">COMPLIANT/FIR<span class="caret"></span></a>
           <ul class="dropdown-menu">
-             <li><a href="#">Add compliant</a></li>
-             <li><a href="#">Update compliant</a></li>
-             <li><a href="#">Status compliant</a></li>
-             <li><a href="#">Remove compliant</a></li>
+             <li><a href="addcompliant.php">Add compliant/FIR</a></li>
+             <li><a href="updatecompliant.php">Update compliant/FIR</a></li>
+             <li><a href="statuscompliant.php">Status compliant/FIR</a></li>
+             <li><a href="viewcompliant.php">View compliant/FIR</a></li>
            </ul>
         </li>
         <li>
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">FIR<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">CHARGE SHEET<span class="caret"></span></a>
           <ul class="dropdown-menu">
-             <li><a href="#">Register FIR</a></li>
-             <li><a href="#">Update FIR</a></li>
+             <li><a href="#">Register Charge sheet</a></li>
+             <li><a href="#">View charge sheet</a></li>
            </ul>
         </li>
       </ul>

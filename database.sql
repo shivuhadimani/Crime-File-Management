@@ -127,3 +127,4 @@ CREATE TABLE comp_wit
     report varchar(500)
 );
 ALTER TABLE `police` CHANGE `pin` `pin` VARCHAR(4) NULL DEFAULT NULL;
+ALTER TABLE `compliant` ADD `status` VARCHAR(50) NOT NULL AFTER `suspect_address`;

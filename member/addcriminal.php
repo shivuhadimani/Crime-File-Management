@@ -8,12 +8,12 @@ if($obj->CheckForLogin()===0)
 if(isset($_POST['name']) && isset($_POST['occup']) && isset($_POST['add']) && isset($_POST['identity']) && isset($_POST['idnum']) && isset($_POST['dob']) && isset($_POST['age']) && isset($_POST['phoneno']) && isset($_POST['idcardtype']) && isset($_POST['mw']))
   if(!empty($_POST['name']) && !empty($_POST['occup']) && !empty($_POST['add']) && !empty($_POST['identity']) && !empty($_POST['idnum']) && !empty($_POST['dob']) && !empty($_POST['age']) && !empty($_POST['phoneno']) && !empty($_POST['idcardtype']) && !empty($_POST['mw']))
   {
-    $query="SELECT MAX(`id`) AS `max` FROM `criminal` WHERE 1";
+    $query="SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Crimedatabase' AND TABLE_NAME = 'criminal'";
     $db1=new database;
     $qexc3=new queryexc;
     $db1->connect();
     $data4=$qexc3->exc($db1->con,$query);
-    $id=$data4[1]['max']+1;
+    $id=$data4[1]['AUTO_INCREMENT'];
     $name=$_POST['name'];
     $occup=$_POST['occup'];
     $add=$_POST['add'];
@@ -91,12 +91,12 @@ if(isset($_POST['name']) && isset($_POST['occup']) && isset($_POST['add']) && is
             <div class="form1">
               <font color="white">Criminal id:
               <?php
-                $query="SELECT MAX(`id`) AS `max` FROM `criminal` WHERE 1";
+                $query="SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'Crimedatabase' AND TABLE_NAME = 'criminal'";
                 $db=new database;
                 $qexc1=new queryexc;
                 $db->connect();
                 $data1=$qexc1->exc($db->con,$query);
-                echo "   ".$data1[1]['max']+1;
+                echo "   ".$data1[1]['AUTO_INCREMENT'];
               ?>
               </font>
               <br>
