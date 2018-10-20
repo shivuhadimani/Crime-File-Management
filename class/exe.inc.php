@@ -14,7 +14,7 @@ class queryexc
     $this->query_exc($query,$connection);
     return $this->get_data();
   }
-  public function qexc($query,$connection)
+  public function qexc($connection,$query)
   {
     if(mysqli_query($connection,$query))
     {

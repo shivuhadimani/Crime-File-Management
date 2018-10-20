@@ -126,3 +126,5 @@ CREATE TABLE comp_wit
     FOREIGN KEY(wit_id) REFERENCES witness(id),
     report varchar(500)
 );
+ALTER TABLE `police` CHANGE `pin` `pin` VARCHAR(4) NULL DEFAULT NULL;
+ALTER TABLE `compliant` ADD `status` VARCHAR(50) NOT NULL AFTER `suspect_address`;

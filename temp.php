@@ -1,0 +1,1 @@
+(!empty($_POST['username']) && !empty($_POST['name']) && !empty($_POST['passw']) && !empty($_POST['add']) && !empty($_POST['grade']) && !empty($_POST['pin']) && !empty($_POST['dob']) && !empty($_POST['age']) && !empty($_POST['phoneno']) && !empty($_POST['email']) && !empty($_POST['station']))

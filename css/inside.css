@@ -1,0 +1,46 @@
+body
+{
+  background-image: url("back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  max-width: 100%;
+}
+input
+{
+  padding: 1px 0px 1px 5px;
+  border-bottom-color: black;
+  border-radius: 5px;
+  border-width: medium;
+}
+#inp
+{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+#inp1
+{
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.form1
+{
+  margin: 5px 5px 8px 80px;
+  width:500px;
+}
+#wrapper
+{
+ text-align:center;
+ margin:0 auto;
+ padding:0px;
+}
+#output_image
+{
+ max-width:300px;
+}
+#cid
+{
+  max-width: 400px;
+  text-decoration-color: white;
+}
