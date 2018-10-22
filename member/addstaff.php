@@ -101,7 +101,7 @@ if(isset($_POST['username']) && isset($_POST['name']) && isset($_POST['passw']) 
                     echo "<option value=\"".$data[$i]['id']."\">".$data[$i]['address']."</option>";
                 ?>
               </select><br>
-              <input type="submit" name="sub" value="Add Staff" id="inp" required="required">
+              <input type="submit" name="sub" value="Add Staff" id="sub" required="required">
             </div>
           </th>
           <th>
