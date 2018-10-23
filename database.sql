@@ -68,10 +68,10 @@ CREATE TABLE post
 );
 CREATE TABLE charge_sheet
 (
-	id INT AUTO_INCREMENT PRIMARY KEY,
+		id INT AUTO_INCREMENT PRIMARY KEY,
+    comp_id INT,
     charges  varchar(150),
-    pol_id varchar(11),
-    FOREIGN KEY(pol_id) REFERENCES police(username)
+    FOREIGN KEY(comp_id) REFERENCES compliant(id)
 );
 CREATE TABLE crime_type
 (

@@ -29,6 +29,11 @@ input
   margin: 5px 5px 8px 80px;
   width:500px;
 }
+.form2
+{
+  margin: 5px 5px 8px 80px;
+  width: 600px;
+}
 #wrapper
 {
  text-align:center;
@@ -43,4 +48,9 @@ input
 {
   max-width: 400px;
   text-decoration-color: white;
+}
+#compno
+{
+  margin-bottom: 5px;
+  margin-top: 5px;
 }

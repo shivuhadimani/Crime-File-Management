@@ -33,10 +33,12 @@ function checkuser()
       {
         var returndata=req.responseText;
         if(returndata=="error")
+        {
           document.getElementById('username').innerHTML="<font color=\"black\">Already username is used!!!!!</font>";
-        else if(returndata=="correct")
+        }else if(returndata=="correct")
+        {
           document.getElementById('username').innerHTML="<font color=\"Black\">Username is available</font>";
-        else
+        }else
           alert("Something went wrong try again,Try again later");
       }
     }

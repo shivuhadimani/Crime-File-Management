@@ -47,8 +47,8 @@
         <li>
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">CHARGE SHEET<span class="caret"></span></a>
           <ul class="dropdown-menu">
-             <li><a href="#">Register Charge sheet</a></li>
-             <li><a href="#">View charge sheet</a></li>
+             <li><a href="registercharge.php">Register Charge sheet</a></li>
+             <li><a href="viewchargesheet.php">View charge sheet</a></li>
            </ul>
         </li>
       </ul>
